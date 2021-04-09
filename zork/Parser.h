@@ -6,12 +6,12 @@
 
 class Parser {
 private:
-	CommandWords *commands;
+    CommandWords *commands;
 
 public:
-	Parser();
-	Command* getCommand();
-	void showCommands();
+    Parser();
+    Command* getCommand();
+    void showCommands();
 };
 
 #endif /*PARSER_H_*/
