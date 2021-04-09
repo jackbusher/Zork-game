@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 #include "ZorkUL.h"
@@ -56,8 +57,9 @@ void ZorkUL::createRooms()  {
 /**
  *  Main play routine.  Loops until end of play.
  */
-void ZorkUL::play() {
-	printWelcome();
+string ZorkUL::printWelcome() {
+    return "Welcome to Zork";
+}
 
 	// Enter the main command loop.  Here we repeatedly read commands and
 	// execute them until the ZorkUL game is over.

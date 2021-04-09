@@ -1,4 +1,4 @@
-/*#ifndef CHARACTER_H_
+#ifndef CHARACTER_H_
 #define CHARACTER_H_
 #include "ZorkUL.h"
 
@@ -25,4 +25,4 @@ public:
 
 };
 
-#endif /*CHARACTER_H_*/
+#endif CHARACTER_H_
