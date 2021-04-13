@@ -49,9 +49,27 @@ void ZorkUL::createRooms()  {
         currentRoom = a;
 }
 
-void ZorkUL::goRoom(Command command) {
+/*void ZorkUL::goRoom(Command command) {
     if (!command.hasSecondWord()) {
         cout << "incomplete input"<< endl;
         return;
     }
 }
+*/
+
+string ZorkUL::go(string direction) {
+    //Make the direction lowercase
+    //transform(direction.begin(), direction.end(), direction.begin(),:: tolower);
+    //Move to the next room
+    Room* nextRoom = currentRoom->nextRoom(direction);
+    if (nextRoom == NULL)
+        return("direction null");
+    else
+    {
+        currentRoom = nextRoom;
+        return currentRoom->longDescription();
+    }
+}
+
+
+

@@ -4,6 +4,7 @@
 #include "ZorkUL.h"
 #include "Command.h"
 #include "CommandWords.h"
+#include "Parser.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -31,11 +32,14 @@ MainWindow::~MainWindow()
 void MainWindow::on_mapButton_clicked()
 {
 ui->label->setVisible(true);
+
 }
+
+
 
 void MainWindow::on_northButton_clicked()
 {
-//goRoom("north");
+zorkul.go("north");
 ui->textBox->setText("You went north! You're now in room ");
 }
 
@@ -50,6 +54,8 @@ void MainWindow::on_southButton_clicked()
 //goRoom("south");
     ui->textBox->setText("You went south! You're now in room ");
 }
+
+
 
 void MainWindow::on_westButton_clicked()
 {
@@ -66,10 +72,20 @@ void MainWindow::on_attackButton_clicked()
 
 void MainWindow::on_infoButton_clicked()
 {
-
+ui->textBox->setText("You are currently in Room A. You have 0 items in your inventory. Princess Ellen is still in danger!" );
 }
 
+/*void MainWindow::go(string direction) {
+    Room* nextRoom = currentRoom->nextRoom(direction);
+    if (nextRoom == NULL)
+        currentRoom = currentRoom;
+    else
+    {
+        currentRoom = nextRoom;
+        return currentRoom->longDescription();
+    }
 
+}*/
 
 
 void MainWindow::on_startButton_clicked()
