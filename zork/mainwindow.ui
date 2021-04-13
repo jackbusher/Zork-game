@@ -115,22 +115,99 @@
      </rect>
     </property>
     <property name="text">
-     <string>         	        [l]         
-         	         |          
-         	         |          
-         	        [k]         
-         	         |          
-         	         |          
+     <string>         	          [l]         
+         	           |          
+         	           |          
+         	          [k]         
+         	           |          
+         	           |          
          	[h]-----[f]-----[e] 
-         	  |         |         | 
-         	  |        |        |  
-         	[i]     [g]     [d] 
-         	 |               |  
-         	 |               |  
-           [j]-----[b]-----[c] 
-         	         |          
-        	         |         
-        	        [a]   </string>
+         	  |        |         | 
+         	  |        |         |  
+         	 [i]      [g]     [d] 
+         	 |                   |  
+         	 |                   |  
+            [j]-----[b]-----[c] 
+         	           |           
+        	           |         
+        	          [a]   </string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::AutoText</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="infoButton">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>80</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Info</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="textBox">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>340</y>
+      <width>761</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Welcome to Zork! Your objective is to go through the rooms, kill the enemies and rescue the princess. You are currently in Room A</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>40</y>
+      <width>55</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>370</y>
+      <width>55</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="startButton">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>240</y>
+      <width>171</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Start Game</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
     </property>
    </widget>
   </widget>
