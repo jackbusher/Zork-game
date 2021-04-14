@@ -21,7 +21,7 @@ public:
 
 
 private:
-    //void go(string direction);
+    void go(string direction);
     //void goRoom(string direction);
 
 private slots:
@@ -51,5 +51,6 @@ private slots:
 private:
     Ui::MainWindow *ui;
     ZorkUL zorkul;
+    Room *currentRoom;
 };
 #endif // MAINWINDOW_H

@@ -45,13 +45,13 @@ ui->textBox->setText("You went north! You're now in room ");
 
 void MainWindow::on_eastButton_clicked()
 {
-//goRoom("east");
+zorkul.go("east");
     ui->textBox->setText("You went east! You're now in room ");
 }
 
 void MainWindow::on_southButton_clicked()
 {
-//goRoom("south");
+zorkul.go("south");
     ui->textBox->setText("You went south! You're now in room ");
 }
 
@@ -59,7 +59,7 @@ void MainWindow::on_southButton_clicked()
 
 void MainWindow::on_westButton_clicked()
 {
-//goRoom("west");
+zorkul.go("west");
     ui->textBox->setText("You went west! You're now in room ");
 
 }
@@ -72,20 +72,23 @@ void MainWindow::on_attackButton_clicked()
 
 void MainWindow::on_infoButton_clicked()
 {
-ui->textBox->setText("You are currently in Room A. You have 0 items in your inventory. Princess Ellen is still in danger!" );
+std::string room;
+room = currentRoom->shortDescription();
+QString qstr = QString::fromStdString(room);
+ui->textBox->setText(qstr );
 }
 
-/*void MainWindow::go(string direction) {
+void MainWindow::go(string direction) {
     Room* nextRoom = currentRoom->nextRoom(direction);
     if (nextRoom == NULL)
         currentRoom = currentRoom;
     else
     {
         currentRoom = nextRoom;
-        return currentRoom->longDescription();
+
     }
 
-}*/
+}
 
 
 void MainWindow::on_startButton_clicked()
