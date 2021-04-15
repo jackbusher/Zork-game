@@ -5,6 +5,7 @@
 #include "Command.h"
 #include "CommandWords.h"
 #include "Parser.h"
+#include <QDebug>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -72,17 +73,22 @@ void MainWindow::on_attackButton_clicked()
 
 void MainWindow::on_infoButton_clicked()
 {
-std::string room;
-room = currentRoom->shortDescription();
+string room;
+ room = zorkul.currentRoom->shortDescription();
+//std::cout<< "Room"<< endl;
+//if(room.empty()){qInfo() << "Roooooom";}
 QString qstr = QString::fromStdString(room);
-ui->textBox->setText(qstr );
+//qInfo() << currentRoom->shortDescription();
+//ui->textBox->setText(qstr );
+ui->textBox->setText(qstr);
 }
 
 void MainWindow::go(string direction) {
     Room* nextRoom = currentRoom->nextRoom(direction);
-    if (nextRoom == NULL)
+    if (nextRoom == NULL){
         currentRoom = currentRoom;
-    else
+      //  currentRoom;
+  }  else
     {
         currentRoom = nextRoom;
 
