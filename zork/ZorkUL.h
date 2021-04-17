@@ -28,6 +28,7 @@ public:
     void play();
     string printWelcome();
     string go(string direction);
+    string viewItems();
 };
 
 

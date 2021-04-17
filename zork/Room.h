@@ -11,13 +11,15 @@ using std::vector;
 class Room {
 
 private:
-    string description;
+
     map<string, Room*> exits;
     string exitString();
     vector <Item> itemsInRoom;
 
 
 public:
+    void setDescription(string description);
+    string description;
     int numberOfItems();
     Room(string description);
     void setExits(Room *north, Room *east, Room *south, Room *west);
@@ -28,6 +30,8 @@ public:
     string displayItem();
     int isItemInRoom(string inString);
     void removeItemFromRoom(int location);
+
+
 };
 
 #endif
