@@ -26,6 +26,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->dropItemButton->setVisible(false);
     ui->infoButton->setVisible(false);
     ui->itemMenuButton->setVisible(false);
+    ui->pushButton->setVisible(false);
 }
 
 
@@ -38,6 +39,7 @@ MainWindow::~MainWindow()
 void MainWindow::on_mapButton_clicked()
 {
 ui->label->setVisible(true);
+ui->pushButton->setVisible(true);
 
 }
 
@@ -63,6 +65,9 @@ if(qstr == finalroom) {
     ui->attackButton->setVisible(false);
     ui->infoButton->setVisible(false);
     ui->itemMenuButton->setVisible(false);
+    ui->pickUpButton->setVisible(false);
+    ui->dropItemButton->setVisible(false);
+    ui->pushButton->setVisible(false);
 }
     ;
 
@@ -116,7 +121,7 @@ void MainWindow::on_infoButton_clicked()
         items = zorkul.currentRoom->numberOfItems();
         QString itemsq = QString::fromStdString(items);
 
-        ui->textBox->setText("There are currently " + itemsq + " items in this room.");
+        ui->textBox->setText("There is at least one item in the room");
     }
 }
 
@@ -148,7 +153,6 @@ void MainWindow::on_startButton_clicked()
     ui->textBox->setVisible(true);
     ui->startButton->setVisible(false);
     ui->itemMenuButton->setVisible(true);
-
     ui->textBox->setText("Welcome to Zork!"
 " Your objective is to go through the rooms, kill the enemies and rescue the princess."
 " You are currently in Room A");
@@ -165,4 +169,10 @@ void MainWindow::on_itemMenuButton_clicked()
 void MainWindow::on_pickUpButton_clicked()
 {
 
+}
+
+void MainWindow::on_pushButton_clicked()
+{
+    ui->label->setVisible(false);
+    ui->pushButton->setVisible(false);
 }
