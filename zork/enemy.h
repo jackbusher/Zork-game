@@ -1,19 +1,30 @@
-#ifndef __Enemy__
-#define __Enemy__
-
-
-#include "Room.h"
-
-
+#ifndef ENEMY_H
+#define ENEMY_H
+#include <string>
 using namespace std;
 
-class Enemy
+class enemy
 {
+private:
+    string description;
+    int enemyhealth = 100;
+    int enemylevel = 0;
+    int enemydamage;
+
 public:
-    Enemy(string name, string description, Room* room);
-    ~Enemy();
 
-    void SetStats(string name);
+    void setHealth(int);
+    void addHealth(int gain);
+    int getHealth();
+    void setLevel(int);
+    void addDamage(int);
 
+    string getDescription();
+    void setDescription();
+    enemy();
+
+public:
+     enemy(string description);
 };
-#endif
+
+#endif // ENEMY_H
