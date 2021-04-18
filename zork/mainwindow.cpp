@@ -22,8 +22,10 @@ MainWindow::MainWindow(QWidget *parent)
     ui->infoButton->setVisible(false);
     ui->textBox->setVisible(false);
     ui->quitButton->setVisible(false);
-
-
+    ui->pickUpButton->setVisible(false);
+    ui->dropItemButton->setVisible(false);
+    ui->infoButton->setVisible(false);
+    ui->itemMenuButton->setVisible(false);
 }
 
 
@@ -60,6 +62,7 @@ if(qstr == finalroom) {
     ui->westButton->setVisible(false);
     ui->attackButton->setVisible(false);
     ui->infoButton->setVisible(false);
+    ui->itemMenuButton->setVisible(false);
 }
     ;
 
@@ -141,11 +144,25 @@ void MainWindow::on_startButton_clicked()
     ui->eastButton->setVisible(true);
     ui->westButton->setVisible(true);
     ui->attackButton->setVisible(true);
-    ui->infoButton->setVisible(true);
     ui->quitButton->setVisible(true);
     ui->textBox->setVisible(true);
     ui->startButton->setVisible(false);
+    ui->itemMenuButton->setVisible(true);
+
     ui->textBox->setText("Welcome to Zork!"
 " Your objective is to go through the rooms, kill the enemies and rescue the princess."
 " You are currently in Room A");
+}
+
+void MainWindow::on_itemMenuButton_clicked()
+{
+    ui->infoButton->setVisible(true);
+    ui->dropItemButton->setVisible(true);
+    ui->pickUpButton->setVisible(true);
+
+}
+
+void MainWindow::on_pickUpButton_clicked()
+{
+
 }

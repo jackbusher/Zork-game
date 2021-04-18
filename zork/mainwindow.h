@@ -22,7 +22,6 @@ public:
 
 private:
     void go(string direction);
-    //void goRoom(string direction);
 
 private slots:
     void on_quitButton_clicked() {
@@ -44,9 +43,11 @@ private slots:
 
     void on_infoButton_clicked();
 
-    //void on_textBox_linkActivated(const QString &link);
-
     void on_startButton_clicked();
+
+    void on_itemMenuButton_clicked();
+
+    void on_pickUpButton_clicked();
 
 private:
     Ui::MainWindow *ui;
