@@ -5,6 +5,8 @@
 #include "Command.h"
 #include "CommandWords.h"
 #include "Parser.h"
+#include "enemy.h"
+#include "Character.h"
 #include <QDebug>
 
 MainWindow::MainWindow(QWidget *parent)
@@ -53,6 +55,7 @@ string room;
  QString qstr = QString::fromStdString(room);
 ui->textBox->setText("You went north! You are now in room " + qstr);
 QString finalroom = "L";
+
 
 if(qstr == finalroom) {
     ui->textBox->setText(("You completed the game! You saved the princess and defeated the enemies! Well done!"));
@@ -105,7 +108,15 @@ string room;
 
 void MainWindow::on_attackButton_clicked()
 {
-
+    string enemy;
+    enemy = zorkul.currentRoom->displayEnemy();
+    QString qstr = QString::fromStdString(enemy);
+if((currentRoom->numberOfEnemies()) == 0){
+    ui->textBox->setText("Why are you attacking? There are no enemies here...");
+} else{
+     ui->textBox->setText("You have killed " + qstr);
+     setnumberOfEnemies(empty);
+}
 }
 
 
@@ -168,7 +179,16 @@ void MainWindow::on_itemMenuButton_clicked()
 
 void MainWindow::on_pickUpButton_clicked()
 {
-
+    string item;
+    item = zorkul.currentRoom->displayItem();
+    QString qstr = QString::fromStdString(item);
+ui ->textBox->setText("You have picked up a " + qstr);
+}
+bool MainWindow::on_dropItemButton_clicked()
+{
+   if(on_dropItemButton_clicked()){
+     //  dropItem(item);
+   }
 }
 
 void MainWindow::on_pushButton_clicked()
