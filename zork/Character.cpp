@@ -1,23 +1,44 @@
-/*#include "Character.h"
+#include "Character.h"
 
-Characterx::Characterx(string description) {
+Character::Character(string description) {
 	this->description = description;
+    itemsInCharacter.empty();
 }
-void Characterx::addItem(Item &item) {
-    itemsInCharacter.push_back(item);
+
+void Character::addItem(Item &item) {
+
+
 }
-void Characterx::addItem(Item *item) {
-    itemsInCharacter.push_back(*item);
-    delete item;
+
+void Character::setHealth(int health){
+    this->health = health;
 }
-string Characterx::longDescription()
+
+int Character::getHealth(){
+    return health;
+}
+
+void Character::setLevel(int level){
+    this->level = level;
+}
+int Character::getLevel(){
+   return level;
+}
+void Character::dropItem(Item){
+ if(itemsInCharacter.size() != itemsInCharacter.empty()){
+     itemsInCharacter.empty();
+     std::cout << "You dropped your weapon! Go find anoter one before your caught lacking...";
+ }
+
+}
+
+string Character::longDescription()
 {
   string ret = this->description;
-  ret += "\n Item list:\n";
-  for (vector<Item>::iterator i = itemsInCharacter.begin(); i != itemsInCharacter.end(); i++)
-    ret += "\t"+ (*i).getLongDescription() + "\n";
+
+  // ret += "\t"+ (*i).getLongDescription() + "\n";
   return ret;
 }
-*/
+
 
 
