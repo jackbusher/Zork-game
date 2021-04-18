@@ -3,29 +3,27 @@
 #include <iostream>
 using namespace std;
 
+enemy::enemy(string enDescription, int health, int damage){
+    desc = enDescription;
+  setHealth(health);
+  eDamage = damage;
+
+}
 enemy::enemy(string enDescription){
-    this->description = enDescription;
-    enemyhealth = 100;
-   enemylevel = 0;
-    enemydamage = 25;
+    desc = enDescription;
 }
 
-void enemy::addDamage(int damage) {
-    enemyhealth -= damage;
+void enemy::setHealth(int health) {
+
+      eHealth = health;
+}
+
+void enemy::setDamage(int damage){
+    eDamage = damage;
 }
 
 string enemy::getDescription(){
-    return description;
+    return desc;
 }
 
-int enemy::getHealth() {
-    return enemyhealth;
-}
 
-/*void enemy::setDescription(string description) {
-    this->description = description;
-} */
-
-void enemy::setHealth(int enHealth) {
-    enemyhealth = enHealth;
-}
