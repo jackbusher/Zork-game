@@ -51,6 +51,14 @@ void Room::addItem(Item *inItem) {
     itemsInRoom.push_back(*inItem);
 }
 
+void Room::addEnemy(string name, int health, int damage){
+    name = "";
+    if(itemsInRoom.size() > 0){
+ std::cout << "This enemy has " << health << "health and does" << damage << "damage! Beware..." << endl;
+}
+}
+
+
 string Room::displayItem() {
     string tempString = "items in room = ";
     int sizeItems = (itemsInRoom.size());
@@ -91,4 +99,5 @@ int Room::isItemInRoom(string inString)
         }
     return -1;
 }
+
 
