@@ -1,7 +1,7 @@
 #include "Character.h"
 
 Character::Character(string description) {
-	this->description = description;
+    this->description = description;
     itemsInCharacter.empty();
 }
 
@@ -39,6 +39,3 @@ string Character::longDescription()
   // ret += "\t"+ (*i).getLongDescription() + "\n";
   return ret;
 }
-
-
-

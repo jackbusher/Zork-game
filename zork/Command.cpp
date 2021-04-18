@@ -39,4 +39,3 @@ bool Command::isUnknown() {
 bool Command::hasSecondWord() {
     return (!secondWord.empty());
 }
-

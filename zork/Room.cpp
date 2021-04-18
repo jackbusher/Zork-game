@@ -17,6 +17,10 @@ void Room::setExits(Room *north, Room *east, Room *south, Room *west) {
         exits["west"] = west;
 }
 
+void Room::setDescription(string description) {
+    this->description = description;
+}
+
 string Room::shortDescription() {
     return description;
 }

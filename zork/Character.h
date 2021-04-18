@@ -11,7 +11,7 @@ using std::vector;
 class Character {
 private:
      string description;
-     vector < string > itemsInCharacter;     
+     vector < string > itemsInCharacter;
      int health = 100;
      int level = 0;
 
