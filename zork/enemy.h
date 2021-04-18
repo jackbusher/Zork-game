@@ -6,25 +6,26 @@ using namespace std;
 class enemy
 {
 private:
-    string description;
-    int enemyhealth = 100;
-    int enemylevel = 0;
-    int enemydamage;
+    string desc;
+    int eHealth;
+    int eDamage;
 
 public:
 
-    void setHealth(int);
-    void addHealth(int gain);
+    void setHealth(int health);
     int getHealth();
-    void setLevel(int);
-    void addDamage(int);
-
+    void setLevel(int level);
+    int getLevel();
+    void setDamage(int damage);
+    int getDamage();
     string getDescription();
     void setDescription();
+    void addEnemy();
     enemy();
 
 public:
      enemy(string description);
+     enemy(string description,int eHealth, int eDamage);
 };
 
 #endif // ENEMY_H
