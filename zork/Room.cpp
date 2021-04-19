@@ -51,16 +51,19 @@ void Room::addItem(Item *inItem) {
     itemsInRoom.push_back(*inItem);
 }
 
-void Room::addEnemy(string name, int health, int damage){
-    name = "";
-    if(itemsInRoom.size() > 0){
- std::cout << "This enemy has " << health << "health and does" << damage << "damage! Beware..." << endl;
+void Room::addEnemy(enemy *enemies){
+   enemiesInRoom.push_back(*enemies);
+
 }
+
+void Room::removeEnemy(){
+    
+      enemiesInRoom.clear();
 }
 
 
 string Room::displayItem() {
-    string tempString = "items in room = ";
+    string tempString = " ";
     int sizeItems = (itemsInRoom.size());
     if (itemsInRoom.size() < 1) {
         tempString = "no items in room";
@@ -75,9 +78,32 @@ string Room::displayItem() {
     return tempString;
     }
 
+string Room::displayEnemy() {
+    string tempString = "Lookout! Theres an enemy around. Prepare for battle... ";
+  int sizeEnemy = (enemiesInRoom.size());
+    if (enemiesInRoom.size() < 1) {
+        tempString = "You are safe from enemies here";
+        }
+    else if (enemiesInRoom.size() > 0) {
+       int x = (0);
+        for (int n = sizeEnemy; n > 0; n--) {
+            tempString = tempString + enemiesInRoom[x].getDescription() + "  " ;
+            x++;
+            }
+        }
+    return tempString;
+    }
+
+
+
 int Room::numberOfItems() {
     return itemsInRoom.size();
 }
+
+int Room::numberOfEnemies(){
+    return enemiesInRoom.size();
+}
+
 
 int Room::isItemInRoom(string inString)
 {
@@ -99,5 +125,4 @@ int Room::isItemInRoom(string inString)
         }
     return -1;
 }
-
 
