@@ -115,10 +115,9 @@ if((currentRoom->numberOfEnemies()) == 0){
     ui->textBox->setText("Why are you attacking? There are no enemies here...");
 } else{
      ui->textBox->setText("You have killed " + qstr);
-     setnumberOfEnemies(empty);
-}
-}
 
+}
+}
 
 
 
