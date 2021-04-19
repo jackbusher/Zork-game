@@ -36,6 +36,7 @@ public:
     int isItemInRoom(string inString);
     void removeItemFromRoom(int location);
     void removeEnemy();
+    void removeItem();
 
 
 };

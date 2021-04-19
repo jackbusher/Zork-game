@@ -4,7 +4,7 @@
 using namespace std;
 #include "ZorkUL.h"
 
-
+// This is available in all editors.
 ZorkUL::ZorkUL() {
     createRooms();
 }
@@ -28,15 +28,20 @@ void ZorkUL::createRooms()  {
     f = new Room("f");
     f->setDescription("F");
         f->addItem(new Item("armour" ,1,1));
+        f->addEnemy(new enemy("Dragon",100,100));
     g = new Room("g");
     g->setDescription("G");
-        g->addItem(new Item("wand", 1, 1));        
+        g->addItem(new Item("wand", 1, 1));
+        g->addEnemy(new enemy("Wolverine",100,100));
     h = new Room("h");
     h->setDescription("H");
+    h->addEnemy(new enemy("Lizardo",100,100));
     i = new Room("i");
     i->setDescription("I");
+    i->addEnemy(new enemy("Dracula",100,100));
     j = new Room("j");
     j->setDescription("J");
+    j->addEnemy(new enemy("Wazowski",100,100));
     k = new Room("k");
     k->setDescription("K");
     l = new Room("L");
@@ -53,7 +58,7 @@ void ZorkUL::createRooms()  {
     h->setExits(NULL, f, i, NULL);
     i->setExits(h,NULL, j, NULL);
     j->setExits(i, b, NULL, NULL);
-    k->setExits(l, NULL, NULL, NULL);
+    k->setExits(l, NULL, f, NULL);
     l->setExits(NULL,NULL,NULL,NULL);
 
 

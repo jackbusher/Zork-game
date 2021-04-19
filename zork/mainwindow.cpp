@@ -5,9 +5,9 @@
 #include "Command.h"
 #include "CommandWords.h"
 #include "Parser.h"
-#include "enemy.h"
-#include "Character.h"
 #include <QDebug>
+#include "Character.h"
+#include "enemy.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -25,10 +25,28 @@ MainWindow::MainWindow(QWidget *parent)
     ui->textBox->setVisible(false);
     ui->quitButton->setVisible(false);
     ui->pickUpButton->setVisible(false);
-    ui->dropItemButton->setVisible(false);
+
     ui->infoButton->setVisible(false);
     ui->itemMenuButton->setVisible(false);
     ui->pushButton->setVisible(false);
+    ui->pushButton_2->setVisible(false);
+
+    ui->room1->setVisible(false);
+    ui->roomb->setVisible(false);
+    ui->roomc->setVisible(false);
+    ui->roomd->setVisible(false);
+    ui->roome->setVisible(false);
+    ui->roomf->setVisible(false);
+    ui->roomg->setVisible(false);
+    ui->roomh->setVisible(false);
+    ui->roomi->setVisible(false);
+    ui->label_6->setVisible(false);
+    ui->roomk->setVisible(false);
+    ui->rooml->setVisible(false);
+    ui->label_7->setVisible(false);
+    ui->label_8->setVisible(false);
+
+
 }
 
 
@@ -42,6 +60,7 @@ void MainWindow::on_mapButton_clicked()
 {
 ui->label->setVisible(true);
 ui->pushButton->setVisible(true);
+ui->label_7->setVisible(true);
 
 }
 
@@ -56,7 +75,6 @@ string room;
 ui->textBox->setText("You went north! You are now in room " + qstr);
 QString finalroom = "L";
 
-
 if(qstr == finalroom) {
     ui->textBox->setText(("You completed the game! You saved the princess and defeated the enemies! Well done!"));
     ui->label->setVisible(false);
@@ -69,10 +87,60 @@ if(qstr == finalroom) {
     ui->infoButton->setVisible(false);
     ui->itemMenuButton->setVisible(false);
     ui->pickUpButton->setVisible(false);
-    ui->dropItemButton->setVisible(false);
+
     ui->pushButton->setVisible(false);
+    ui->pushButton_2->setVisible(false);
+
+    ui->label_8->setVisible(false);
+    ui->label_7->setVisible(false);
+
 }
     ;
+
+ if(room=="B") {
+     ui->roomb->setVisible(true);
+     ui->roomb->raise();
+ }
+ else if(room=="C") {
+     ui->roomc->setVisible(true);
+     ui->roomc->raise();
+ }
+ else if(room=="D") {
+     ui->roomd->setVisible(true);
+     ui->roomd->raise();
+ }
+ else if(room=="E") {
+     ui->roome->setVisible(true);
+     ui->roome->raise();
+ }
+ else if(room=="F") {
+     ui->roomf->setVisible(true);
+     ui->roomf->raise();
+ }
+ else if(room=="G") {
+     ui->roomg->setVisible(true);
+     ui->roomg->raise();
+ }
+ else if(room=="H") {
+     ui->roomh->setVisible(true);
+     ui->roomh->raise();
+}
+ else if(room=="I") {
+     ui->roomi->setVisible(true);
+     ui->roomi->raise();
+}
+ else if(room=="J") {
+     ui->label_6->setVisible(true);
+     ui->label_6->raise();
+}
+ else if(room=="K") {
+     ui->roomk->setVisible(true);
+     ui->roomk->raise();
+}
+ else if(room=="L") {
+     ui->rooml->setVisible(true);
+     ui->rooml->raise();
+}
 
 }
 
@@ -83,6 +151,52 @@ string room;
  room = zorkul.currentRoom->shortDescription();
  QString qstr = QString::fromStdString(room);
     ui->textBox->setText("You went east! You are now in room " + qstr);
+
+    if(room=="B") {
+        ui->roomb->setVisible(true);
+        ui->roomb->raise();
+    }
+    else if(room=="C") {
+        ui->roomc->setVisible(true);
+        ui->roomc->raise();
+    }
+    else if(room=="D") {
+        ui->roomd->setVisible(true);
+        ui->roomd->raise();
+    }
+    else if(room=="E") {
+        ui->roome->setVisible(true);
+        ui->roome->raise();
+    }
+    else if(room=="F") {
+        ui->roomf->setVisible(true);
+        ui->roomf->raise();
+    }
+    else if(room=="G") {
+        ui->roomg->setVisible(true);
+        ui->roomg->raise();
+    }
+    else if(room=="H") {
+        ui->roomh->setVisible(true);
+        ui->roomh->raise();
+   }
+    else if(room=="I") {
+        ui->roomi->setVisible(true);
+        ui->roomi->raise();
+   }
+    else if(room=="J") {
+        ui->label_6->setVisible(true);
+        ui->label_6->raise();
+   }
+    else if(room=="K") {
+        ui->roomk->setVisible(true);
+        ui->roomk->raise();
+   }
+    else if(room=="L") {
+        ui->rooml->setVisible(true);
+        ui->rooml->raise();
+   }
+
 }
 
 void MainWindow::on_southButton_clicked()
@@ -92,6 +206,52 @@ string room;
  room = zorkul.currentRoom->shortDescription();
  QString qstr = QString::fromStdString(room);
     ui->textBox->setText("You went south! You are now in room " + qstr);
+
+    if(room=="B") {
+        ui->roomb->setVisible(true);
+        ui->roomb->raise();
+    }
+    else if(room=="C") {
+        ui->roomc->setVisible(true);
+        ui->roomc->raise();
+    }
+    else if(room=="D") {
+        ui->roomd->setVisible(true);
+        ui->roomd->raise();
+    }
+    else if(room=="E") {
+        ui->roome->setVisible(true);
+        ui->roome->raise();
+    }
+    else if(room=="F") {
+        ui->roomf->setVisible(true);
+        ui->roomf->raise();
+    }
+    else if(room=="G") {
+        ui->roomg->setVisible(true);
+        ui->roomg->raise();
+    }
+    else if(room=="H") {
+        ui->roomh->setVisible(true);
+        ui->roomh->raise();
+   }
+    else if(room=="I") {
+        ui->roomi->setVisible(true);
+        ui->roomi->raise();
+   }
+    else if(room=="J") {
+        ui->label_6->setVisible(true);
+        ui->label_6->raise();
+   }
+    else if(room=="K") {
+        ui->roomk->setVisible(true);
+        ui->roomk->raise();
+   }
+    else if(room=="L") {
+        ui->rooml->setVisible(true);
+        ui->rooml->raise();
+   }
+
 }
 
 
@@ -104,6 +264,52 @@ string room;
  QString qstr = QString::fromStdString(room);
     ui->textBox->setText("You went west! You are now in room " + qstr);
 
+    if(room=="B") {
+        ui->roomb->setVisible(true);
+        ui->roomb->raise();
+    }
+    else if(room=="C") {
+        ui->roomc->setVisible(true);
+        ui->roomc->raise();
+    }
+    else if(room=="D") {
+        ui->roomd->setVisible(true);
+        ui->roomd->raise();
+    }
+    else if(room=="E") {
+        ui->roome->setVisible(true);
+        ui->roome->raise();
+    }
+    else if(room=="F") {
+        ui->roomf->setVisible(true);
+        ui->roomf->raise();
+    }
+    else if(room=="G") {
+        ui->roomg->setVisible(true);
+        ui->roomg->raise();
+    }
+    else if(room=="H") {
+        ui->roomh->setVisible(true);
+        ui->roomh->raise();
+    }
+    else if(room=="I") {
+        ui->roomi->setVisible(true);
+        ui->roomi->raise();
+    }
+    else if(room=="J") {
+        ui->label_6->setVisible(true);
+        ui->label_6->raise();
+    }
+    else if(room=="K") {
+        ui->roomk->setVisible(true);
+        ui->roomk->raise();
+    }
+    else if(room=="L") {
+        ui->rooml->setVisible(true);
+        ui->rooml->raise();
+    }
+
+
 }
 
 void MainWindow::on_attackButton_clicked()
@@ -111,15 +317,13 @@ void MainWindow::on_attackButton_clicked()
     string enemy;
     enemy = zorkul.currentRoom->displayEnemy();
     QString qstr = QString::fromStdString(enemy);
-if((currentRoom->numberOfEnemies()) == 0){
+if((zorkul.currentRoom->numberOfEnemies()) == 0){
     ui->textBox->setText("Why are you attacking? There are no enemies here...");
 } else{
      ui->textBox->setText("You have killed " + qstr);
-
+     zorkul.currentRoom->removeEnemy();
 }
 }
-
-
 
 void MainWindow::on_infoButton_clicked()
 {
@@ -127,11 +331,22 @@ void MainWindow::on_infoButton_clicked()
         ui->textBox->setText("There are no items in this room");
     }
     else {
-        string items;
+        int items;
+        string itemsam;
         items = zorkul.currentRoom->numberOfItems();
-        QString itemsq = QString::fromStdString(items);
+        itemsam = to_string(items);
 
-        ui->textBox->setText("There is at least one item in the room");
+        QString itemsq = QString::fromStdString(itemsam);
+        if(items == 0 ) {
+            ui->textBox->setText("There are no items in this room.");
+        }
+        else if(items == 1) {
+            ui->textBox->setText("There is 1 item in this room.");
+
+        }
+        else {
+            ui->textBox->setText("There are " + itemsq + " items in the room");
+        }
     }
 }
 
@@ -150,7 +365,6 @@ void MainWindow::go(string direction) {
 
 }
 
-
 void MainWindow::on_startButton_clicked()
 {
     ui->mapButton->setVisible(true);
@@ -163,35 +377,57 @@ void MainWindow::on_startButton_clicked()
     ui->textBox->setVisible(true);
     ui->startButton->setVisible(false);
     ui->itemMenuButton->setVisible(true);
+    ui->room1->setVisible(true);
+    ui->label_8->setVisible(true);
     ui->textBox->setText("Welcome to Zork!"
 " Your objective is to go through the rooms, kill the enemies and rescue the princess."
 " You are currently in Room A");
+
+
 }
+
 
 void MainWindow::on_itemMenuButton_clicked()
 {
     ui->infoButton->setVisible(true);
-    ui->dropItemButton->setVisible(true);
+
     ui->pickUpButton->setVisible(true);
+    ui->itemMenuButton->setVisible(false);
+    ui->pushButton_2->setVisible(true);
+
+
 
 }
 
 void MainWindow::on_pickUpButton_clicked()
 {
+
     string item;
     item = zorkul.currentRoom->displayItem();
     QString qstr = QString::fromStdString(item);
-ui ->textBox->setText("You have picked up a " + qstr);
-}
-bool MainWindow::on_dropItemButton_clicked()
-{
-   if(on_dropItemButton_clicked()){
-     //  dropItem(item);
-   }
-}
 
+        ui ->textBox->setText("You have picked up a " + qstr);
+    zorkul.currentRoom->removeItem();
+   // if(zorkul.currentRoom->numberOfItems()==0) {
+     //   ui->textBox->setText("There are no items in this room");
+   // }
+
+}
 void MainWindow::on_pushButton_clicked()
 {
     ui->label->setVisible(false);
     ui->pushButton->setVisible(false);
+    ui->label_7->setVisible(false);
 }
+
+void MainWindow::on_pushButton_2_clicked()
+{
+    ui->itemMenuButton->setVisible(true);
+    ui->infoButton->setVisible(false);
+
+    ui->pickUpButton->setVisible(false);
+    ui->pushButton_2->setVisible(false);
+
+}
+
+

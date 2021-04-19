@@ -25,5 +25,3 @@ void enemy::setDamage(int damage){
 string enemy::getDescription(){
     return desc;
 }
-
-

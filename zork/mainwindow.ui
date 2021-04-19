@@ -17,8 +17,8 @@
    <widget class="QPushButton" name="northButton">
     <property name="geometry">
      <rect>
-      <x>320</x>
-      <y>107</y>
+      <x>350</x>
+      <y>30</y>
       <width>91</width>
       <height>31</height>
      </rect>
@@ -37,8 +37,8 @@
    <widget class="QPushButton" name="westButton">
     <property name="geometry">
      <rect>
-      <x>230</x>
-      <y>140</y>
+      <x>260</x>
+      <y>60</y>
       <width>93</width>
       <height>28</height>
      </rect>
@@ -57,8 +57,8 @@
    <widget class="QPushButton" name="eastButton">
     <property name="geometry">
      <rect>
-      <x>410</x>
-      <y>140</y>
+      <x>440</x>
+      <y>60</y>
       <width>93</width>
       <height>28</height>
      </rect>
@@ -77,8 +77,8 @@
    <widget class="QPushButton" name="southButton">
     <property name="geometry">
      <rect>
-      <x>320</x>
-      <y>170</y>
+      <x>350</x>
+      <y>90</y>
       <width>93</width>
       <height>28</height>
      </rect>
@@ -157,8 +157,8 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>560</x>
-      <y>50</y>
+      <x>600</x>
+      <y>90</y>
       <width>591</width>
       <height>321</height>
      </rect>
@@ -189,7 +189,7 @@
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>320</y>
+      <y>310</y>
       <width>93</width>
       <height>28</height>
      </rect>
@@ -212,7 +212,7 @@
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>340</y>
+      <y>420</y>
       <width>761</width>
       <height>171</height>
      </rect>
@@ -232,27 +232,17 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>630</x>
-      <y>40</y>
-      <width>55</width>
-      <height>16</height>
+      <x>0</x>
+      <y>-140</y>
+      <width>1831</width>
+      <height>731</height>
      </rect>
     </property>
     <property name="text">
      <string/>
     </property>
-   </widget>
-   <widget class="QLabel" name="label_3">
-    <property name="geometry">
-     <rect>
-      <x>630</x>
-      <y>370</y>
-      <width>55</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
+    <property name="pixmap">
+     <pixmap>../../Downloads/rock.jpg</pixmap>
     </property>
    </widget>
    <widget class="QPushButton" name="startButton">
@@ -285,7 +275,7 @@
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>230</y>
+      <y>250</y>
       <width>93</width>
       <height>28</height>
      </rect>
@@ -305,7 +295,7 @@
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>260</y>
+      <y>280</y>
       <width>93</width>
       <height>28</height>
      </rect>
@@ -321,11 +311,24 @@
      <string>Pick up item</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="dropItemButton">
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>100</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>X</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>290</y>
+      <y>250</y>
       <width>93</width>
       <height>28</height>
      </rect>
@@ -338,22 +341,356 @@
      </font>
     </property>
     <property name="text">
-     <string>Drop item</string>
+     <string>Close menu</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>710</x>
-      <y>60</y>
-      <width>21</width>
-      <height>21</height>
+      <x>0</x>
+      <y>-100</y>
+      <width>831</width>
+      <height>851</height>
      </rect>
     </property>
     <property name="text">
-     <string>X</string>
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../Downloads/rock.jpg</pixmap>
     </property>
    </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>-80</y>
+      <width>55</width>
+      <height>611</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../Downloads/rock.jpg</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>450</y>
+      <width>121</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../Downloads/rock.jpg</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="room1">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>140</y>
+      <width>461</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../Downloads/room1.jpeg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="roomb">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>140</y>
+      <width>461</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../Downloads/roomb.jpeg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="roomc">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>140</y>
+      <width>461</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../Downloads/roomc.jpeg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="roomd">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>140</y>
+      <width>461</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../Downloads/roomd.jpeg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="roome">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>140</y>
+      <width>461</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../Downloads/roome.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="roomf">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>140</y>
+      <width>461</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../Downloads/roomf.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="roomg">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>140</y>
+      <width>461</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../Downloads/roomg.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="roomh">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>140</y>
+      <width>461</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../Downloads/Lizard.webp</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="roomi">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>140</y>
+      <width>461</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../Downloads/roomh.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="roomk">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>140</y>
+      <width>461</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../Downloads/princess.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="rooml">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>500</y>
+      <width>661</width>
+      <height>461</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../Downloads/finalroom.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>140</y>
+      <width>461</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../Downloads/roomj.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>120</y>
+      <width>111</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../Downloads/white.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>490</y>
+      <width>731</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../Downloads/white.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <zorder>label_4</zorder>
+   <zorder>label_2</zorder>
+   <zorder>label_6</zorder>
+   <zorder>label_3</zorder>
+   <zorder>itemMenuButton</zorder>
+   <zorder>startButton</zorder>
+   <zorder>label_5</zorder>
+   <zorder>room1</zorder>
+   <zorder>roomb</zorder>
+   <zorder>roomc</zorder>
+   <zorder>roomd</zorder>
+   <zorder>roome</zorder>
+   <zorder>roomf</zorder>
+   <zorder>roomg</zorder>
+   <zorder>roomh</zorder>
+   <zorder>roomi</zorder>
+   <zorder>roomk</zorder>
+   <zorder>rooml</zorder>
+   <zorder>label_7</zorder>
+   <zorder>label</zorder>
+   <zorder>pushButton</zorder>
+   <zorder>quitButton</zorder>
+   <zorder>mapButton</zorder>
+   <zorder>attackButton</zorder>
+   <zorder>pushButton_2</zorder>
+   <zorder>pickUpButton</zorder>
+   <zorder>infoButton</zorder>
+   <zorder>northButton</zorder>
+   <zorder>westButton</zorder>
+   <zorder>southButton</zorder>
+   <zorder>eastButton</zorder>
+   <zorder>label_8</zorder>
+   <zorder>textBox</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

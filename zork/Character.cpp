@@ -27,7 +27,7 @@ int Character::getLevel(){
 void Character::dropItem(Item){
  if(itemsInCharacter.size() != itemsInCharacter.empty()){
      itemsInCharacter.empty();
-     std::cout << "You dropped your weapon! Go find anoter one before your caught lacking...";
+     std::cout << "You dropped your weapon! Go find another one before you're caught lacking...";
  }
 
 }

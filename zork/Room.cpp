@@ -56,8 +56,12 @@ void Room::addEnemy(enemy *enemies){
 
 }
 
+void Room::removeItem() {
+    itemsInRoom.clear();
+}
+
 void Room::removeEnemy(){
-    
+
       enemiesInRoom.clear();
 }
 
@@ -87,7 +91,7 @@ string Room::displayEnemy() {
     else if (enemiesInRoom.size() > 0) {
        int x = (0);
         for (int n = sizeEnemy; n > 0; n--) {
-            tempString = tempString + enemiesInRoom[x].getDescription() + "  " ;
+            tempString = enemiesInRoom[x].getDescription() + "  " ;
             x++;
             }
         }
